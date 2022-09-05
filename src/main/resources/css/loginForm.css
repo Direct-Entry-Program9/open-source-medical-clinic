@@ -1,3 +1,4 @@
-/*.btn{*/
-/*    -fx-background-color: ;*/
-/*}*/
+.btn{
+    -fx-background-color: #9A9ACF;
+    -fx-background-radius: 5px;
+}
