@@ -87,6 +87,7 @@ public class LoginFormController {
 
                 Stage stage = new Stage();
                 stage.setScene(scene);
+                btnLogin.getScene().getWindow().hide();
                 stage.show();
                 stage.centerOnScreen();
                 System.out.println(SecurityContextHolder.getPrincipal().toString());

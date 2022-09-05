@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="436.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.ManageFieldFormController">
+   <children>
+      <Label layoutX="129.0" layoutY="22.0" prefHeight="24.0" prefWidth="231.0" text="Manage Field">
+         <font>
+            <Font name="DejaVu Serif Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="86.0" layoutY="67.0" prefHeight="28.0" prefWidth="307.0" text="Add or Update, Delete Doctor's Field">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtField" layoutX="26.0" layoutY="103.0" prefHeight="35.0" prefWidth="313.0" style="-fx-background-color: #c9c9f1;" unFocusColor="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="140.0" />
+      <JFXTextField fx:id="txtFieldList" layoutX="26.0" layoutY="155.0" prefHeight="257.0" prefWidth="313.0" style="-fx-background-color: #c9c9f1;" unFocusColor="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="140.0" />
+      <VBox layoutX="360.0" layoutY="100.0" spacing="10.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <JFXButton fx:id="btnAdd" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="95.0" styleClass="btn" stylesheets="@../css/loginForm.css" text="ADD" textFill="WHITE" />
+            <JFXButton fx:id="btnNew" onAction="#btnNewOnAction" prefHeight="35.0" prefWidth="95.0" styleClass="btn" stylesheets="@../css/loginForm.css" text="NEW" textFill="WHITE" />
+            <JFXButton fx:id="btnDelete" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="95.0" styleClass="btn" stylesheets="@../css/loginForm.css" text="DELETE" textFill="WHITE" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

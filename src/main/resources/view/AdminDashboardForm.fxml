@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="388.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.AdminDashboardFormController">
+<AnchorPane prefHeight="460.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.AdminDashboardFormController">
    <children>
       <Label layoutX="51.0" layoutY="39.0" prefHeight="18.0" prefWidth="428.0" text="MEDICARE CHANNELING CENTER">
          <font>
@@ -31,6 +31,11 @@
                <font>
                   <Font name="DejaVu Sans Mono Bold" size="13.0" />
                </font></JFXButton>
+            <JFXButton fx:id="btnLogout" onAction="#btnLogoutOnAction" prefHeight="62.0" prefWidth="326.0" style="-fx-background-color: #8080CF;" text="LOGOUT" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="13.0" />
+               </font>
+            </JFXButton>
          </children>
       </VBox>
    </children>
