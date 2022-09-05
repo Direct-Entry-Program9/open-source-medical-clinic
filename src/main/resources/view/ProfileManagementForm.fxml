@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.ProfileManagementFormController">
+   <children>
+      <Label layoutX="20.0" layoutY="14.0" text="PROFILE MANAGEMENT">
+         <font>
+            <Font name="DejaVu Serif Bold" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="16.0" layoutY="51.0" prefHeight="5.0" prefWidth="568.0" style="-fx-background-color: #C9C9F1;" />
+      <TableView fx:id="tblProfileTable" layoutX="20.0" layoutY="72.0" prefHeight="301.0" prefWidth="474.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="USERNAME" />
+          <TableColumn prefWidth="75.0" text="ROLE" />
+            <TableColumn prefWidth="88.0" text="ADDRESS" />
+            <TableColumn prefWidth="119.0" text="CONTACT DETAILS" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton fx:id="btnNew" layoutX="506.0" layoutY="72.0" onAction="#btnNewOnAction" prefHeight="40.0" prefWidth="78.0" styleClass="btn" stylesheets="@../css/loginForm.css" text="NEW" textFill="WHITE" />
+      <JFXButton fx:id="btnModify" layoutX="506.0" layoutY="120.0" onAction="#btnModifyOnAction" prefHeight="40.0" prefWidth="78.0" styleClass="btn" stylesheets="@../css/loginForm.css" text="MODIFY" textFill="WHITE" />
+      <JFXButton fx:id="btnDelete" layoutX="506.0" layoutY="167.0" onAction="#btnDeleteOnAction" prefHeight="40.0" prefWidth="78.0" styleClass="btn" stylesheets="@../css/loginForm.css" text="DELETE" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -15,7 +15,12 @@ public class AdminDashboardFormController {
     public JFXButton btnSettings;
     public JFXButton btnLogout;
 
-    public void btnProfileManageOnAction(ActionEvent actionEvent) {
+    public void btnProfileManageOnAction(ActionEvent actionEvent) throws IOException {
+        Parent parent = FXMLLoader.load(this.getClass().getResource("/view/ProfileManagementForm.fxml"));
+        Stage stage = new Stage();
+        stage.setScene(new Scene(parent));
+        stage.show();
+        stage.centerOnScreen();
     }
 
     public void btnViewRecordsOnAction(ActionEvent actionEvent) {
