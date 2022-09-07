@@ -2,12 +2,12 @@ package lk.ijse.dep9.clinic.security;
 
 public class User {
     private String name;
-    private String role;
+    private UserRole role;
 
     public User() {
     }
 
-    public User(String name, String role) {
+    public User(String name, UserRole role) {
         this.name = name;
         this.role = role;
     }
@@ -20,11 +20,11 @@ public class User {
         this.name = name;
     }
 
-    public String getRole() {
+    public UserRole getRole() {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRole(UserRole role) {
         this.role = role;
     }
 

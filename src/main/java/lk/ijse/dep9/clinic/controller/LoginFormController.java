@@ -3,6 +3,8 @@ package lk.ijse.dep9.clinic.controller;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
+import com.mysql.cj.callback.MysqlCallbackHandler;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -72,7 +74,7 @@ public class LoginFormController {
                 }
 
                 String role = rst.getString("role");
-                SecurityContextHolder.setPrincipal(new User(username,role));
+                SecurityContextHolder.setPrincipal(new User(username,UserRole.valueOf(role)));
                 Scene scene;
                 switch (role){
                     case "Admin":
